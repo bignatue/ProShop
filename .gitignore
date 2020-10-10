@@ -16,6 +16,7 @@ node_modules/
 .DS_Store
 .proshop_v2.code-workspace
 .env
+.vscode
 .env.local
 .env.development.local
 .env.test.local
