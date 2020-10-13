@@ -8,7 +8,8 @@ import Product from '../Models/ProductModel.js'
 // @access public
 router.get('/', AsyncHandler(async (req, res) => {
     const products = await Product.find({})
-
+    // res.status(401)
+    // throw new Error('Not authorized!')
     res.json(products)
 }))
 
