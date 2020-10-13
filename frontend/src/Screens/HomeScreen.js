@@ -8,8 +8,8 @@ import {ListProducts} from '../Actions/ProductActions'
 
 const HomeScreen = () => {
     const dispatch = useDispatch()
-    const productList = useSelector(state => state.ProductList)
-    const { loading, error, products } = productList
+    const ProductList = useSelector(state => state.ProductList)
+    const { loading, error, products } = ProductList
     
     useEffect(() => {
         dispatch(ListProducts())

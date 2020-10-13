@@ -1,7 +1,8 @@
 import express from 'express'
 import AsyncHandler from 'express-async-handler'
-const  router = express.Router()
 import Product from '../Models/ProductModel.js'
+
+const  router = express.Router()
 
 // @desc fetch all products
 // @route GET /api/products
