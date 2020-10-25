@@ -15,10 +15,8 @@ app.use(express.json())
 app.get('/', (req, res) => {
     res.send('API is running...')
 })
-
 app.use('/api/products', ProductRoutes)
 app.use('/api/users', UserRoutes)
-
 app.use(notFound)
 app.use(errorHandler)
 
